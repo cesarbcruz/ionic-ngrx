@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Three
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="this.contact">
+      <div>
+        <input class="input-content" [(ngModel)]="this.contact.id"
+          placeholder="id" readonly>
+      </div>
+      <div>
+        <input class="input-content" [(ngModel)]="this.contact.nome"
+          placeholder="nome" readonly>
+      </div>
+      <div>
+        <input class="input-content" [(ngModel)]="this.contact.telefone"
+          placeholder="telefone" readonly>
+      </div>
+      <div>
+        <input class="input-content" [(ngModel)]="this.contact.email"
+          placeholder="email" readonly>
+      </div>
+    </div>
+    <div>
+      <ion-button slot="end" (click)="find()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+  </div>
+
+</ion-content>

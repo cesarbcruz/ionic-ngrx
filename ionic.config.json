@@ -1,0 +1,8 @@
+{
+  "name": "NgRxTest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "27a58137"
+}
